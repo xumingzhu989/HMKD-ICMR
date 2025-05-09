@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+    python -m torch.distributed.launch --nproc_per_node=4 --master_port='29501'\
+    train_NEW_AEU_kd.py
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+    python -m torch.distributed.launch --nproc_per_node=4 \
+    train_NEW_AEU_kd.py
+CUDA_VISIBLE_DEVICES=0,1 \
+    python -m torch.distributed.launch --nproc_per_node=2 \
+    train_NEW_AEU_kd.py
+46415
+CUDA_VISIBLE_DEVICES=0,1 nohup python -m torch.distributed.launch --nproc_per_node=2 train_NEW_AEU_kd.py > E_A_1.file 2>&1 &
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train_NEW_AEU_kd.py
+
+38137
+CUDA_VISIBLE_DEVICES=0,1 nohup python -m torch.distributed.launch --nproc_per_node=2 train_NEW_AEU_kd.py > Unc.file 2>&1 &
+
+18278
+CUDA_VISIBLE_DEVICES=0,1 nohup python -m torch.distributed.launch --nproc_per_node=2 train_NEW_AEU_kd.py > H_V_MSE_fixed.file 2>&1 &
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train_NEW_AEU_kd.py
