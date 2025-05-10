@@ -5,7 +5,7 @@ Welcome to the official repository for the paper "Heterogeneous Model Knowledge 
 ## Requirement
 Ubuntu 20.04.4 LTS
 
-Python 3.8.10
+Python 3.8.10 ([Anaconda](https://www.anaconda.com/) is recommended)
 
 CUDA 11.3
 
@@ -13,10 +13,14 @@ Pytorch 1.11.0
 
 NCCL for CUDA 2.10.3
 
-Install python packages:
-pip install timm==
-pip install mmcv-full==
-pip install opencv-python==
+### Install python packages:
+```
+pip install timm==0.3.2
+
+pip install mmcv-full==1.2.7
+
+pip install opencv-python==4.5.1.48
+```
 
 ## The initiallization Weights for Training
 (https://download.pytorch.org/models/resnet18-5c106cde.pth), [DeepLabV3 - ResNet-18 - resnet18.pth]
