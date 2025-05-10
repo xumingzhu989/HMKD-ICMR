@@ -33,6 +33,21 @@ pip install opencv-python==
 Please download the pre-trained model weights and dataset first. Next, generate the path lists of the training set and the test set, and change the dataset path in the code to the path of the dataset listing file (.txt) you specified.
 
 ~~~python
+CUDA_VISIBLE_DEVICES=0,1 nohup python -m torch.distributed.launch --nproc_per_node=2 train_NEW_AEU_kd.py > H_V_MSE_fixed.file 2>&1 &
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train_NEW_AEU_kd.py
+~~~
+
+## Citation
+If it helps your research,  please use the information below to cite our work, thank you. 
+
+~~~
+@ARTICLE{HMKD,
+  author={Xu, Mingzhu and Wang, Jing and Wang, Mingcai and Li, Yiping and Hu, Yupeng and Song, Xuemeng and Guan, Weili},
+  journal={ICMR}, 
+  title={Heterogeneous Model Knowledge Distillation via Dual Alignment for Semantic Segmentation}, 
+  year={2025}}
+~~~
+
 
 
 
