@@ -4,9 +4,13 @@ Welcome to the official repository for the paper "Heterogeneous Model Knowledge 
 
 ## Requirement
 Ubuntu 20.04.4 LTS
+
 Python 3.8.10
+
 CUDA 11.3
+
 Pytorch 1.11.0
+
 NCCL for CUDA 2.10.3
 
 Install python packages:
