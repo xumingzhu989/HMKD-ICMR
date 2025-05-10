@@ -24,8 +24,11 @@ pip install opencv-python==4.5.1.48
 
 ## The initiallization Weights for Training
 (https://download.pytorch.org/models/resnet18-5c106cde.pth), [DeepLabV3 - ResNet-18 - resnet18.pth]
+
 (https://download.pytorch.org/models/resnet101-5d3b4d8f.pth), [DeepLabV3 - ResNet-101 - resnet101.pth]
+
 (https://drive.google.com/drive/folders/1GAku0G0iR9DsBxCbfENWMJ27c5lYUeQA?usp=sharing), [Segformer - mit-b0 - segformerb0.pth]
+
 (https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/Ept_oetyUGFCsZTKiL_90kUBy5jmPV65O5rJInsnRCDWJQ?e=CvGohw), [Segformer - mit-b4 - segformerb4.pth]
 
 ## Trained Weights of HMKD for Testing
